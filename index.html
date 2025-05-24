@@ -249,9 +249,9 @@
         <div class="server-header">DISCORD SERVER</div>
         
         <div class="channel-category">TEXT CHANNELS</div>
-        <div class="channel active" onclick="showChannel('rules')">rules</div>
-        <div class="channel" onclick="showChannel('masterlist')">masterlist</div>
-        <div class="channel" onclick="showChannel('wishlist')">wishlist</div>
+        <div class="channel active" onclick="showChannel(this, 'rules')">rules</div>
+        <div class="channel" onclick="showChannel(this, 'masterlist')">masterlist</div>
+        <div class="channel" onclick="showChannel(this, 'wishlist')">wishlist</div>
     </div>
     
     <div class="main-content">
@@ -278,28 +278,28 @@
                     <div class="rule">
                         <span class="rule-number">3.</span>
                         <div class="rule-content">
-                            // walaupun private, kita bakal tetep ada unverification ya. kalian bakal kena sapu kalau kalian: 1) nggak aktif selama lebih dari period yang admin-admin lihat, 2) gak pernah ikut nimbrung, 3) join cuman buat nyari bahan gossip.
+                            // walaupun private, kita bakal tetep ada unverification ya. kalian bakal kena sapu kalau kalian: 1) nggak aktif selama lebih dari period yang admin-admin lihat, 2) gak per[...]
                         </div>
                     </div>
                     
                     <div class="rule">
                         <span class="rule-number">4.</span>
                         <div class="rule-content">
-                            // kita community yang sangat santai, nggak ada daily activity check, nggak ada target level yang harus dikejar, tapi karena ini masih dalam payung roleplay, diusahain jangan overshare yang aneh-aneh dan merugikan kalian, ya. tuhan (sesuai kepercayaan masing-masing) maha melihat.
+                            // kita community yang sangat santai, nggak ada daily activity check, nggak ada target level yang harus dikejar, tapi karena ini masih dalam payung roleplay, diusahain jang[...]
                         </div>
                     </div>
                     
                     <div class="rule">
                         <span class="rule-number">5.</span>
                         <div class="rule-content">
-                            // semua hal yang penting wajib dikomunikasiin dengan admin. buka tiket untuk ngobrol apapun itu! mau request role/kegiatan juga boleh, asal jangan drama aja, mau itu sama admin/member.
+                            // semua hal yang penting wajib dikomunikasiin dengan admin. buka tiket untuk ngobrol apapun itu! mau request role/kegiatan juga boleh, asal jangan drama aja, mau itu sama [...]
                         </div>
                     </div>
                     
                     <div class="rule">
                         <span class="rule-number">6.</span>
                         <div class="rule-content">
-                            // cc diperbolehkan setiap saat, tapi ada jarak interval 5 hari sejak cc terakhir ke cc berikutnya. sedangkan tcc diperbolehkan setiap 3 hari sekali. hiatus diperbolehkan maksimal 7 hari (1 minggu)
+                            // cc diperbolehkan setiap saat, tapi ada jarak interval 5 hari sejak cc terakhir ke cc berikutnya. sedangkan tcc diperbolehkan setiap 3 hari sekali. hiatus diperbolehkan m[...]
                         </div>
                     </div>
                     
@@ -313,7 +313,7 @@
                     <div class="rule">
                         <span class="rule-number">8.</span>
                         <div class="rule-content">
-                            // NGOMONGIN CARDBOT APAPUN ITU = AUTO KICK! ini termasuk commands-commands cardbot, seperti nomer kartu, command drop, dll. jangan coba alter nama-nama cardbot juga, misal: Loket jadi L0K3T.
+                            // NGOMONGIN CARDBOT APAPUN ITU = AUTO KICK! ini termasuk commands-commands cardbot, seperti nomer kartu, command drop, dll. jangan coba alter nama-nama cardbot juga, misal[...]
                         </div>
                     </div>
                     
@@ -336,7 +336,6 @@
     </div>
 
     <script>
-      
         const channels = {
             rules: {
                 name: "rules",
@@ -361,28 +360,28 @@
                             <div class="rule">
                                 <span class="rule-number">3.</span>
                                 <div class="rule-content">
-                                    // walaupun private, kita bakal tetep ada unverification ya. kalian bakal kena sapu kalau kalian: 1) nggak aktif selama lebih dari period yang admin-admin lihat, 2) gak pernah ikut nimbrung, 3) join cuman buat nyari bahan gossip.
+                                    // walaupun private, kita bakal tetep ada unverification ya. kalian bakal kena sapu kalau kalian: 1) nggak aktif selama lebih dari period yang admin-admin lihat, 2)[...]
                                 </div>
                             </div>
                             
                             <div class="rule">
                                 <span class="rule-number">4.</span>
                                 <div class="rule-content">
-                                    // kita community yang sangat santai, nggak ada daily activity check, nggak ada target level yang harus dikejar, tapi karena ini masih dalam payung roleplay, diusahain jangan overshare yang aneh-aneh dan merugikan kalian, ya. tuhan (sesuai kepercayaan masing-masing) maha melihat.
+                                    // kita community yang sangat santai, nggak ada daily activity check, nggak ada target level yang harus dikejar, tapi karena ini masih dalam payung roleplay, diusah[...]
                                 </div>
                             </div>
                             
                             <div class="rule">
                                 <span class="rule-number">5.</span>
                                 <div class="rule-content">
-                                    // semua hal yang penting wajib dikomunikasiin dengan admin. buka tiket untuk ngobrol apapun itu! mau request role/kegiatan juga boleh, asal jangan drama aja, mau itu sama admin/member.
+                                    // semua hal yang penting wajib dikomunikasiin dengan admin. buka tiket untuk ngobrol apapun itu! mau request role/kegiatan juga boleh, asal jangan drama aja, mau i[...]
                                 </div>
                             </div>
                             
                             <div class="rule">
                                 <span class="rule-number">6.</span>
                                 <div class="rule-content">
-                                    // cc diperbolehkan setiap saat, tapi ada jarak interval 5 hari sejak cc terakhir ke cc berikutnya. sedangkan tcc diperbolehkan setiap 3 hari sekali. hiatus diperbolehkan maksimal 7 hari (1 minggu)
+                                    // cc diperbolehkan setiap saat, tapi ada jarak interval 5 hari sejak cc terakhir ke cc berikutnya. sedangkan tcc diperbolehkan setiap 3 hari sekali. hiatus diperbo[...]
                                 </div>
                             </div>
                             
@@ -396,7 +395,7 @@
                             <div class="rule">
                                 <span class="rule-number">8.</span>
                                 <div class="rule-content">
-                                    // NGOMONGIN CARDBOT APAPUN ITU = AUTO KICK! ini termasuk commands-commands cardbot, seperti nomer kartu, command drop, dll. jangan coba alter nama-nama cardbot juga, misal: Loket jadi L0K3T.
+                                    // NGOMONGIN CARDBOT APAPUN ITU = AUTO KICK! ini termasuk commands-commands cardbot, seperti nomer kartu, command drop, dll. jangan coba alter nama-nama cardbot jug[...]
                                 </div>
                             </div>
                             
@@ -415,6 +414,7 @@
                             </div>
                         </div>
                     </div>
+            `
             },
             masterlist: {
                 name: "masterlist",
@@ -643,29 +643,24 @@
                             <li>3. ?</li>
                         </ul>
                     </div>
+                `
+            }
         };
 
-        function showChannel(channelId) {
+        function showChannel(element, channelId) {
             const channel = channels[channelId];
             const contentElement = document.getElementById("channel-content");
-            
-          
             contentElement.style.opacity = 0;
             contentElement.style.transform = "translateY(10px)";
-            
             setTimeout(() => {
                 document.getElementById("channel-name").textContent = channel.name;
                 contentElement.innerHTML = channel.content;
-                
-              
                 contentElement.style.opacity = 1;
                 contentElement.style.transform = "translateY(0)";
-                
-            
                 document.querySelectorAll('.channel').forEach(item => {
                     item.classList.remove('active');
                 });
-                event.currentTarget.classList.add('active');
+                element.classList.add('active');
             }, 150);
         }
     </script>
